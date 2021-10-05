@@ -82,22 +82,22 @@
   border-bottom: 1px solid #dae4e9;
 
   &__contact {
-    max-width: 200px;
+    width: 200px;
     margin-right: 100px;
   }
 
   &__services {
-    max-width: 170px;
+    width: 170px;
     margin-right: 130px;
   }
 
   &__account {
-    max-width: 100px;
+    width: 100px;
     margin-right: 200px;
   }
 
   &__newsletter {
-    max-width: 270px;
+    width: 270px;
   }
 
   &__title {
@@ -131,6 +131,7 @@
     max-width: 170px;
     width: 100%;
     padding: 10px 15px;
+    outline: transparent;
   }
 
   &__button {
