@@ -49,6 +49,7 @@
       background-color: #edf1f4;
       border-radius: 50%;
       position: relative;
+
       & img {
         position: absolute;
         top: 34%;
@@ -62,11 +63,125 @@
       background-color: #a3bbc8;
       border-radius: 50%;
       position: relative;
+
       & img {
         position: absolute;
         top: 30%;
         left: 30%;
       }
+    }
+  }
+}
+
+
+.footer-top {
+  font-size: 14px;
+  line-height: 24px;
+  padding: 70px 0;
+  display: flex;
+  border-bottom: 1px solid #dae4e9;
+
+  &__contact {
+    max-width: 200px;
+    margin-right: 100px;
+  }
+
+  &__services {
+    max-width: 170px;
+    margin-right: 130px;
+  }
+
+  &__account {
+    max-width: 100px;
+    margin-right: 200px;
+  }
+
+  &__newsletter {
+    max-width: 270px;
+  }
+
+  &__title {
+    font-size: 16px;
+    line-height: 21px;
+    text-transform: uppercase;
+    padding-top: 10px;
+    margin-bottom: 25px;
+    @extend %dm-700;
+    color: #1f2044;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 24px;
+    color: $footer-text;
+    margin-bottom: 25px;
+  }
+
+  &__list-item {
+    margin-bottom: 10px;
+  }
+
+  &__list-link {
+    color: $footer-text;
+  }
+
+  &__input {
+    border: none;
+    background-color: #fef7f0;
+    max-width: 170px;
+    width: 100%;
+    padding: 10px 15px;
+  }
+
+  &__button {
+    position: relative;
+    left: -4px;
+    background-color: #a3bbc8;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    line-height: 21px;
+    color: #fff;
+    cursor: pointer;
+    @extend %dm-400;
+  }
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+  font-size: 14px;
+  line-height: 32px;
+  color: $footer-text;
+
+  &__links {
+    display: flex;
+  }
+
+  &__link {
+    color: $footer-text;
+    position: relative;
+  }
+
+  &__link+.footer-bottom__link {
+    margin-left: 30px;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 16px;
+      height: 2px;
+      background-color: #7b7b7b;
+      position: absolute;
+      left: -24px;
+      top: 15px;
+      transform: rotate(90deg)
     }
   }
 }
